@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_toEndOf="@id/btn_remove"
+        app:srcCompat="@drawable/boomer_stacker" />
+
+    <TextView
+        android:id="@+id/mealNameinOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderSummary"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/imageView3"
+        android:text="Drink Name"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/quantityinOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/orderSummary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/btn_remove"
+        android:layout_toRightOf="@+id/drinkNameinOrderSummary"
+        android:text="x"
+        android:textColor="@color/ic_launcher_background"
+        android:textStyle="bold"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/haspotatoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mealNameinOrderSummary"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/size8"
+        android:layout_toEndOf="@id/imageView3"
+        android:text="has potatoes"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/hasToy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mealNameinOrderSummary"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="-78dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/haspotatoes"
+        android:text="has cream"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/et_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mealNameinOrderSummary"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginLeft="-78dp"
+        android:layout_toEndOf="@+id/imageView3"
+        android:layout_toRightOf="@+id/haspotatoes"
+        android:text="has cream"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/priceinOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="$10" />
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/ic_baseline_remove_circle_outline_24" />
+
+</RelativeLayout>

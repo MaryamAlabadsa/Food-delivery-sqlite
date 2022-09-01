@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/cart_clear_purchase"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/btn_clear_all_purchase"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/cart_shaw_all_purchase"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/btn_show_all_purchase"
+        app:showAsAction="never" />
+ <item
+        android:id="@+id/cart_shaw_last_purchase"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/btn_show_last_purchase"
+        app:showAsAction="never" />
+
+</menu>

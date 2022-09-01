@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_custom_car_height">150dp</dimen>
+    <dimen name="text_input">14dp</dimen>
+    <dimen name="size8">8dp</dimen>
+    <dimen name="size32">32dp</dimen>
+
+    <dimen name="tv_custom_item_name">18dp</dimen>
+    <dimen name="text_input_top1">8dp</dimen>
+</resources>

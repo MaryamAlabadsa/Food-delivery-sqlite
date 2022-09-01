@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toc_test">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".final_screen"></activity>
+        <activity android:name=".purchase"
+            android:parentActivityName=".view_item_main"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+        <activity android:name=".change_password" />
+        <activity
+            android:name=".search_layout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Place_Order"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity_favorites" />
+        <activity
+            android:name=".show_item_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Create_new_account"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splash_screen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".cheakout"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".view_item_main"
+            />
+        <activity
+            android:name=".view_item_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Create_new_account">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/img_new_account"
+            android:layout_width="224dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_baseline_add_photo_alternate_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_first_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_input"
+            android:layout_marginTop="@dimen/text_input"
+            android:layout_marginEnd="@dimen/text_input"
+            app:endIconMode="clear_text"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_input_top1"
+                android:hint="@string/ed_full_name"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_user_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_input"
+            android:layout_marginTop="@dimen/text_input"
+            android:layout_marginEnd="@dimen/text_input"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ed_user_name"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_input"
+            android:layout_marginTop="@dimen/text_input"
+            android:layout_marginEnd="@dimen/text_input"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_datepicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="date of birth "
+                android:inputType="date"
+                android:padding="16dp"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_input"
+
+            android:layout_marginEnd="@dimen/text_input"
+            android:entries="@array/DialingCountryCode"
+            android:padding="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_EmailAddress"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_input"
+            android:layout_marginTop="@dimen/text_input"
+            android:layout_marginEnd="@dimen/text_input"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/ed_EmailAddress"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_Password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_input"
+            android:layout_marginTop="@dimen/text_input"
+            android:layout_marginEnd="@dimen/text_input"
+            app:errorEnabled="true"
+
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/ed_Password"
+                android:inputType="textPassword"
+                android:padding="16dp"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ed_num_Phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_input"
+            android:layout_marginTop="@dimen/text_input"
+            android:layout_marginEnd="@dimen/text_input"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/ed_num_Phone"
+                android:inputType="phone"
+                android:padding="16dp"
+                android:textSize="18dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/btn_male_or_female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_num_Phone"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            android:paddingStart="16dp">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/btn_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_male"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/btn_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="120dp"
+                android:text="@string/btn_female"
+                android:textSize="20sp" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_male_or_female"
+            android:layout_marginStart="@dimen/tv_custom_item_name"
+            android:layout_marginTop="16dp"
+            android:hint="@string/checkBox"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_finish"
+            android:layout_width="275dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/checkBox"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/btn_finish"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

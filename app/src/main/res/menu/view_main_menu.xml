@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/main_menu_change_password"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/btn_change_password"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/main_menu_out"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/main_menu_purchase"
+        android:icon="@drawable/ic_purchase_order"
+        android:title="purchase"
+        app:showAsAction="always" />
+
+
+    </menu>
